@@ -16,4 +16,5 @@ public class Person extends BaseEntity {
     private Integer deathYear;
     private String profession;
     private String externalId;
+    private String externalKnowIds;
 }

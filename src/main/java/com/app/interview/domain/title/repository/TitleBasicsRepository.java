@@ -23,9 +23,9 @@ public interface TitleBasicsRepository extends JpaRepository<TitleBasics, Long> 
                   select e.person.id as writer,
                          p.person.id as director,
                          e.titleBasics.id as titleId
-                    from TitlePrincipals e
+                    from TitlePrincipalsCrew e
               inner join e.person n
-              inner join TitlePrincipals p
+              inner join TitlePrincipalsCrew p
                       on e.titleBasics.id = p.titleBasics.id
                    where e.category = 'writer'
                      and p.category = 'director'
@@ -38,7 +38,7 @@ public interface TitleBasicsRepository extends JpaRepository<TitleBasics, Long> 
     @Query("""
              select res.id
                from (select e.id as id
-             from TitlePrincipals e
+             from TitlePrincipalsCrew e
             where e.category = 'actor'
               and e.person.id in(?1)
             group by e.id)res

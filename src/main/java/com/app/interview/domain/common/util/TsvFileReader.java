@@ -36,7 +36,11 @@ public class TsvFileReader {
                 }
 
                 String[] columns = line.split("\t");
-                task.execute(columns);
+                try {
+                    task.execute(columns);
+                } catch (Exception _) {
+
+                }
             }
 
         } catch (IOException e) {

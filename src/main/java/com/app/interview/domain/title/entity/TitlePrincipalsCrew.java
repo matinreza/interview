@@ -10,7 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name = "TITLE_PRINCIPALS")
+@Table(name = "TITLE_PRINCIPALS_CREW")
 public class TitlePrincipalsCrew extends BaseEntity {
     @ManyToOne
     @JoinColumn(name = "TITLE_ID")

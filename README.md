@@ -30,10 +30,13 @@ After data conversion, the following endpoints are available:
 
 #### Fourth assignment question:
 
-`localhost:8080/api/title/v1/list?actorIdList=123,147`
+`localhost:8080/api/title/v1/bestEachYear/list?genre=Documentary`
 
 
 #### And the last one:
 
 `localhost:8080/actuator/metrics/http.server.requests`
 `localhost:8080/actuator/prometheus`
+
+#### H2 web console with imdbdb database name
+`http://localhost:8080/h2-console`

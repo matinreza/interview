@@ -35,8 +35,9 @@ After data conversion, the following endpoints are available:
 
 #### And the last one:
 
-`localhost:8080/actuator/metrics/http.server.requests`
+`localhost:8080/actuator/metrics/http.server.requests` and 
 `localhost:8080/actuator/prometheus`
 
-#### H2 web console with imdbdb database name
+
+#### H2 web console with imdbdb database name:
 `http://localhost:8080/h2-console`

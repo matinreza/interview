@@ -1,0 +1,31 @@
+package com.app.interview.domain.title.entity.enums;
+
+public enum Genre {
+    Documentary,
+    Short,
+    Animation,
+    Comedy,
+    Romance,
+    Sport,
+    News,
+    Drama,
+    Fantasy,
+    Horror,
+    Biography,
+    Music,
+    War,
+    Crime,
+    Western,
+    Family,
+    Adventure,
+    Action,
+    History,
+    Mystery,
+    Sci_Fi,
+    Thriller,
+    Film_Noir,
+    Tk_Show,
+    Game_Show,
+    Adult,
+    Reality_TV
+}
